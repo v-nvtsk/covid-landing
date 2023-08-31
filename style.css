@@ -175,6 +175,10 @@ a:visited {
   box-sizing: border-box;
 }
 
+/* .page {
+  background-color:rgba(11,19,67,255);
+} */
+
 .page__wrapper {
   margin: 0 auto;
   max-width: 1440px;
