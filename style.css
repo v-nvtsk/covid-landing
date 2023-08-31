@@ -449,3 +449,14 @@ a:visited {
   height: 50px;
   width: 50px;
 }
+
+
+.promo .icon {
+  height: 50px;
+  width: 50px;
+  background-color: var(--color-btn--inactive);
+  padding: 10px;
+  grid-row: 1/3;
+  align-self: center;
+  border-radius: 10px;
+}
