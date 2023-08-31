@@ -146,6 +146,22 @@ table {
   border-spacing: 0;
 }
 
+.btn {
+  border-radius: 20px;
+  height: 69px;
+
+  background-color: var(--color-btn--inactive);
+  color: var(--color-btn--primary);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.btn-primary {
+  background: var(--color-blue);
+  color: var(--color-active);
+}
+
 .page * {
   font-family: Montserrat, sans-serif;
   box-sizing: border-box;
