@@ -236,3 +236,22 @@ table {
   color: var(--color-blue);
   border: none;
 }
+
+.promo {
+  padding-top: 110px;
+  background: url("./img/home-background.jpg") center / cover no-repeat;
+}
+
+.promo .section-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 70px;
+}
+
+.specialists__list {
+  display: flex;
+}
+
+.schedule {
+  grid-row: 2/3;
+}
