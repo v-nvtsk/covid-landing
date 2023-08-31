@@ -1,3 +1,15 @@
+:root {
+  --color-active: #ffffff;
+  --color-blue: #17c2ec;
+  --color-btn--primary: white;
+  --color-btn--inactive: rgba(196, 196, 196, 0.1);
+  --color-black: #000000;
+  --color-dark-blue: #0b153c;
+  --color-link--active: #ffffff;
+  --color-link--inactive: rgba(255, 255, 255, 50%);
+  --color-text--secondary: rgba(255, 255, 255, 0.7);
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
