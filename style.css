@@ -591,3 +591,136 @@ a:visited {
   text-decoration: underline;
   text-align: center;
 }
+
+.wgv {
+  background: url(./img/home-background.jpg) center / cover no-repeat;
+  padding: 58px 71px 79px;
+  height: 795px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.wgv__title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wgv__header {
+  width: 504px;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3.62rem;
+
+  color: #ffffff;
+}
+.wgv__description {
+  width: 536px;
+  text-align-last: left;
+
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.wgv__list {
+  margin-top: 40px;
+  display: flex;
+  /* gap: 74px; */
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.wgv__list-item {
+  width: 350px;
+  height: 350px;
+  border: 3px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50px;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.wgv__list-item--primary {
+  width: 450px;
+  height: 500px;
+
+  background: rgba(196, 196, 196, 0.2);
+  border-radius: 49.896px 149.688px 49.896px 49.896px;
+}
+
+.wgv__icon-wrapper {
+  height: 70px;
+  width: 70px;
+
+  filter: drop-shadow(0px 2.79418px 2.79418px rgba(0, 0, 0, 0.1));
+
+  background: rgba(196, 196, 196, 0.1);
+  border-radius: 20.9563px;
+
+  border: 3px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wgv__list-item--primary .wgv__icon-wrapper {
+  width: 100px;
+  height: 100px;
+
+  background: rgba(196, 196, 196, 0.1);
+  border-radius: 30px;
+  border: none;
+}
+
+.wgv__icon {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.wgv__list-item--primary .wgv__icon{
+  width: 70px;
+  height: 70px;
+}
+
+.list-item__title {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.81rem;
+}
+
+.list-item__title--primary {
+  color: #17c2ec;
+}
+
+.list-item__description {
+  margin-top: 30px;
+
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+}
+
+.list-item__next {
+  margin-top: 40px;
+  display: flex;
+  align-items: Center;
+}
+
+.wgv .wgv__readmore {
+  font-weight: 700;
+  font-size: 17.9626px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #17c2ec;
+  display: flex;
+  align-items: Center;
+  gap: 10px;
+}
+
+.wgv .wgv__readmore--primary {
+  color: var(--color-blue);
+}
