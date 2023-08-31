@@ -1,12 +1,12 @@
 :root {
-  --color-active: #ffffff;
   --color-blue: #17c2ec;
-  --color-btn--primary: white;
-  --color-btn--inactive: rgba(196, 196, 196, 0.1);
   --color-black: #000000;
   --color-dark-blue: #0b153c;
+  --color-btn--primary: white;
+  --color-btn--inactive: rgba(196, 196, 196, 0.1);
   --color-link--active: #ffffff;
   --color-link--inactive: rgba(255, 255, 255, 50%);
+  --color-text--primary: #ffffff;
   --color-text--secondary: rgba(255, 255, 255, 0.7);
 }
 
@@ -125,6 +125,7 @@ section {
 body {
   line-height: 1;
   font-size: 16px;
+  color: var(--color-text--secondary);
 }
 ol,
 ul {
@@ -159,7 +160,7 @@ table {
 
 .btn-primary {
   background: var(--color-blue);
-  color: var(--color-active);
+  color: var(--color-text--primary);
 }
 
 a,
@@ -195,7 +196,7 @@ a:visited {
   font-size: 2rem;
   line-height: 1.22;
 
-  color: var(--color-active);
+  color: var(--color-text--primary);
 }
 
 .header__logo::before {
@@ -231,22 +232,22 @@ a:visited {
   font-weight: 700;
   line-height: 1.81;
 
-  color: var(--color-inactive-link);
+  color: var(--color-link--inactive);
 }
 
 .nav-link {
-  color: var(--color-inactive-link);
+  color: var(--color-link--inactive);
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
 }
 
 .nav-link--active {
-  color: var(--color-active-link);
+  color: var(--color-link--active);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
+  align-items: center;
 }
 
 .nav-link--active:after {
@@ -264,7 +265,7 @@ a:visited {
   width: 219px;
   height: 69px;
 
-  background: var(--color-inactive-btn);
+  background: var(--color-btn--inactive);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 
@@ -308,7 +309,7 @@ a:visited {
   font-weight: 800;
   font-size: 3rem;
   line-height: 1.23;
-  color: var(--color-active);
+  color: var(--color-text--primary);
 }
 
 .promo__information {
@@ -334,7 +335,7 @@ a:visited {
 }
 
 .promo__help-centre-btn {
-  color: var(--color-active);
+  color: var(--color-text--primary);
   background: rgba(196, 196, 196, 0.1);
 
   border: 2px solid #17c2ec;
@@ -410,7 +411,7 @@ a:visited {
 }
 
 .specialists__count {
-  color: var(--color-active);
+  color: var(--color-text--primary);
 }
 
 .specialists__item img {
@@ -432,7 +433,7 @@ a:visited {
   font-size: 1.5rem;
   line-height: 1.2;
 
-  color: var(--color-active);
+  color: var(--color-text--primary);
   margin-left: 70px;
   position: relative;
   top: -30%;
