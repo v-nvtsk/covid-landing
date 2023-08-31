@@ -438,7 +438,7 @@ a:visited {
 
   color: var(--color-text--primary);
   margin-left: 70px;
-  position: relative;
+  position: absolute;
   top: -30%;
 }
 
