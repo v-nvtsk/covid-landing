@@ -481,3 +481,9 @@ a:visited {
   align-self: center;
   border-radius: 10px;
 }
+
+.input-substitution {
+  color: var(--color-text--primary);
+  font-weight: 700;
+}
+
