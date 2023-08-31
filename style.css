@@ -312,6 +312,11 @@ a:visited {
   color: var(--color-text--primary);
 }
 
+.promo__link,
+.promo__link:visited {
+  color: var(--color-blue);
+}
+
 .promo__information {
   margin-top: 50px;
   font-weight: 700;
