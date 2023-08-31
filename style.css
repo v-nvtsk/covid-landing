@@ -162,6 +162,12 @@ table {
   color: var(--color-active);
 }
 
+a,
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 .page * {
   font-family: Montserrat, sans-serif;
   box-sizing: border-box;
