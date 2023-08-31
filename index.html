@@ -40,9 +40,9 @@
     </header>
 
     <section class="promo" id="promo">
-      <div class="section-wrapper">
-        <div class="part1">
-          <p class="promo__title">Get Vaccinated. Boost your Immune System</p>
+      <div class="promo__wrapper">
+        <div class="promo__content-wrapper">
+          <p class="promo__slogan">Get Vaccinated. Boost your Immune System</p>
           <h1 class="promo__header">
             COVID-19 Vaccination<br>
             Got Easier With,<br>
@@ -52,62 +52,72 @@
             Vaccination.ng will help you find the nearest centre for vaccination, in all 36 states in Nigeria.
           </p>
 
-          <div class="buttons-block">
-            <button type="button">Get Vaccine</button>
-            <button type="button">Help Centre</button>
+          <div class="promo__buttons-block">
+            <button class="promo__get-vaccine-btn btn btn-primary" type="button">Get Vaccine</button>
+            <button class="promo__help-centre-btn btn btn-secondary" type="button">Help Centre</button>
           </div>
 
         </div>
-        <div class="part2">
-          <img src="./img/home-main-image.png" alt="vaccine">
-          <div class="specialists">
-            <img src="./img/doctor-taking-safety-measures-for-corona-2996940-2495209.png" alt="">
-            <img src="./img/coronavirus-2996952-2495219.png" alt="">
+        <div class="promo__visual-wrapper">
+          <img class="promo__image" src="./img/home-main-image.png" alt="vaccine">
+          <div class="promo__aside-image-wrapper promo__aside-image-wrapper--left">
+            <img class="promo__aside-image" src="./img/doctor-taking-safety-measures-for-corona-2996940-2495209.png"
+              alt="">
+          </div>
+          <div class="promo__aside-image-wrapper promo__aside-image-wrapper--right">
+            <img class="promo__aside-image" src="./img/coronavirus-2996952-2495219.png" alt="">
+          </div>
+          <div class="promo__specialists specialists">
             <ul class="specialists__list">
-              <li class="specialists__item"><img src="./img/home-spec-1.jpg" alt="doctor1"></li>
-              <li class="specialists__item"><img src="./img/home-spec-2.jpg" alt="doctor2"></li>
-              <li class="specialists__item"><img src="./img/home-spec-3.jpg" alt="doctor3"></li>
-              <li class="specialists__item">
-                <p>20+</p>
-                <p>Specialists</p>
+              <li class="specialists__item specialists__item--image"><img src="./img/home-spec-1.jpg" alt="doctor1">
+              </li>
+              <li class="specialists__item specialists__item--image"><img src="./img/home-spec-2.jpg" alt="doctor2">
+              </li>
+              <li class="specialists__item specialists__item--image"><img src="./img/home-spec-3.jpg" alt="doctor3">
+              </li>
+              <li class="specialists__item specialists__item--info">
+                <p class="specialists__count">20+</p>
+                <p class="specialists__text">Specialists</p>
               </li>
             </ul>
           </div>
         </div>
-      </div>
 
-      <div class="schedule" id="schedule">
-        <div class="schedule-title">
-          <img src="./img/clock.svg" alt="">
-          <h2>Schedule your Vaccination</h2>
-        </div>
-        <form class="schedule-form" action="#">
-          <label for="location">
-            Location
-            <select name="location" id="location">
-              <option value="Ikeja Lagos, Nigeria">Ikeja Lagos, Nigeria</option>
-            </select>
-          </label>
-          <label for="schedule-date">
-            Date
-            <input name="schedule-date" id="schedule-date" type="date">
-          </label>
-          <label for="schedule-vaccine-type">
-            Vaccine Type
-            <select name="schedule-vaccine-type" id="schedule-vaccine-type">
-              <option value="Moderna">Moderna</option>
-              <option value="Pfizer">Pfizer</option>
-              <option value="AstraZeneca">AstraZeneca</option>
-              <option value="SINOVAC">SINOVAC</option>
-            </select>
-          </label>
-          <button class="schedule-submit" onclick="window.dialogIsScheduled.show()">Submit</button>
-        </form>
-        <div class="dialog-wrapper">
-          <dialog id="dialog-IsScheduled">
-            <p>Your vaccination is scheduled!</p>
-            <button onclick="window.dialogIsScheduled.close()">Close</button>
-          </dialog>
+
+        <!-- Schedule design substitution -->
+        <div class="promo__schedule schedule" id="schedule">
+          <div class="schedule__title">
+            <!-- <img src="./img/clock.svg" alt=""> -->
+            <h2>Schedule your Vaccination</h2>
+          </div>
+          <form class="schedule__form" action="#">
+            <label for="location">
+              Location
+              <select name="location" id="location">
+                <option value="Ikeja Lagos, Nigeria">Ikeja Lagos, Nigeria</option>
+              </select>
+            </label>
+            <label for="schedule-date">
+              Date
+              <input name="schedule-date" id="schedule-date" type="date">
+            </label>
+            <label for="schedule-vaccine-type">
+              Vaccine Type
+              <select name="schedule-vaccine-type" id="schedule-vaccine-type">
+                <option value="Moderna">Moderna</option>
+                <option value="Pfizer">Pfizer</option>
+                <option value="AstraZeneca">AstraZeneca</option>
+                <option value="SINOVAC">SINOVAC</option>
+              </select>
+            </label>
+            <button type="button" class="schedule-submit" onclick="window.dialogIsScheduled.show()">Submit</button>
+          </form>
+          <div class="dialog-wrapper">
+            <dialog id="dialog-IsScheduled">
+              <p>Your vaccination is scheduled!</p>
+              <button type="button" onclick="window.dialogIsScheduled.close()">Close</button>
+            </dialog>
+          </div>
         </div>
       </div>
     </section>
