@@ -459,6 +459,19 @@ a:visited {
   gap: 50px;
 }
 
+.schedule__label {
+  height: 58px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+
+  display: grid;
+  grid-template-columns: 50px 246px;
+  column-gap: 20px;
+
+  color: var(--color-link--inactive);
+}
+
 .promo .icon {
   height: 50px;
   width: 50px;
