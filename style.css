@@ -148,6 +148,7 @@ table {
 }
 
 .btn {
+  border: none;
   border-radius: 20px;
   height: 69px;
 
@@ -310,6 +311,11 @@ a:visited {
   font-size: 3rem;
   line-height: 1.23;
   color: var(--color-text--primary);
+}
+
+.promo__link,
+.promo__link:visited {
+  color: var(--color-blue);
 }
 
 .promo__information {
