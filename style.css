@@ -10,6 +10,11 @@
   --color-text--secondary: rgba(255, 255, 255, 0.7);
 }
 
+@font-face {
+  font-family: Montserrat;
+  src: url("/fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
