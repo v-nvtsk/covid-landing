@@ -128,7 +128,12 @@ table {
   border-spacing: 0;
 }
 
-.page-wrapper {
+.page * {
+  font-family: Montserrat, sans-serif;
+  box-sizing: border-box;
+}
+
+.page__wrapper {
   margin: 0 auto;
   max-width: 1440px;
 }
