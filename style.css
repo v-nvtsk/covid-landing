@@ -148,6 +148,7 @@ table {
 }
 
 .btn {
+  cursor: pointer;
   border: none;
   border-radius: 20px;
   height: 69px;
