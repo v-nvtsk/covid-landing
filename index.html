@@ -231,8 +231,48 @@
 
     </section>
 
-    <section id="schedule" class="get-vaccine">
-
+    <section id="get-vaccine" class="get-vaccine">
+      <div class="get-vaccine__wrapper">
+        <div class="get-vaccine__content">
+          <h2 class="get-vaccine__header">
+            Get your vaccine registration today
+          </h2>
+          <form action="#" class="get-vaccine__form">
+            <label class="get-vaccine__fullname-label" for="fullname">
+              Patient's Full Name
+              <input class="get-vaccine__fullname-input" type="text" name="fullname" id="fullname"
+                placeholder="Full name">
+            </label>
+            <label class="get-vaccine__phone-label" for="phone">
+              Mobile Number
+              <p class="get-vaccine__phone-description">
+                Notifications for appointment and reminders will be sent to this
+                provided number</p>
+              <div class="get-vaccine__phone-wrapper">
+                <input class="get-vaccine__phone-input" type="tel" name="phone" id="phone" placeholder="Phone number"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <button class="btn btn-primary get-vaccine__verify-btn" type="button">
+                  Verify
+                </button>
+              </div>
+              <button class="btn btn-primary get-vaccine__submit-btn" type="button">
+                Submit
+              </button>
+            </label>
+          </form>
+          <div class="get-vaccine__check-status">
+            <p class="get-vaccine__text">Already registered?</p>
+            <a class="link get-vaccine__check-status-link" href="#">Check your status</a>
+          </div>
+        </div>
+        <div class="get-vaccine__visual">
+          <div class="get-vaccine__visual-wrapper">
+            <p class="get-vaccine__visual-title">COVID-19 Vaccine</p>
+            <img src="./img/get-vaccine__covid.png" alt="SARS-COV2 model" class="get-vaccine__img-covid">
+            <button class="btn get-vaccine__verify-status-btn" type="button">Verify status</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="symptoms">
