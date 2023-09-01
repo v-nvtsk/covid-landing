@@ -147,6 +147,10 @@ table {
   border-spacing: 0;
 }
 
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
 .btn {
   cursor: pointer;
   border: none;
