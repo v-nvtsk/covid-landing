@@ -976,6 +976,7 @@ a:visited {
   padding: 57px 61px;
   background: url("./img/feedback-background.jpg") center / cover no-repeat,
     rgba(255, 255, 255, 0.5);
+  position: relative;
 }
 
 .feedback__wrapper {
@@ -1113,11 +1114,10 @@ a:visited {
   height: 500px;
 
   background: #0b153c;
-  position: relative;
 }
 
 .quote {
-  top: -198px;
+  bottom: -202px;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
