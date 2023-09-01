@@ -199,6 +199,8 @@ a:visited {
 
 .header__logo,
 .footer__logo {
+  height: 44px;
+  align-self: auto;
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
@@ -213,7 +215,7 @@ a:visited {
   content: "";
   display: inline-block;
   position: absolute;
-  bottom: 10px;
+  bottom: 15px;
   height: 1px;
   width: 100px;
 
@@ -222,23 +224,24 @@ a:visited {
 }
 
 .nav-bar {
-  margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 25px;
+  justify-content: space-between;
   font-size: 1.5rem;
+  flex: 1;
 }
 
 .nav-bar__list {
   list-style-type: none;
   display: flex;
-  gap: 25px;
+  gap: min(2vw, 25px);
+  justify-content: center;
+  flex: 1;
 }
 
 .nav-bar__item {
   display: inline-block;
-  font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 1.81;
 
   color: var(--color-link--inactive);
@@ -246,12 +249,12 @@ a:visited {
 
 .nav-link {
   color: var(--color-link--inactive);
-  text-decoration: none;
   font-style: normal;
   font-weight: 500;
 }
 
 .nav-link--active {
+  font-weight: 700;
   color: var(--color-link--active);
   display: flex;
   flex-direction: column;
@@ -269,13 +272,12 @@ a:visited {
 }
 
 .check-status-btn {
-  margin-left: 181px;
+  margin-left: 31px;
 
   width: 219px;
   height: 69px;
 
   background: var(--color-btn--inactive);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 
   font-weight: 700;
