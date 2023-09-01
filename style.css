@@ -866,3 +866,107 @@ a:visited {
   padding: 13px 33px;
   font-size: 1.25rem;
 }
+
+.symptoms {
+  height: 981px;
+  background: url("./img/home-background.jpg") center / cover no-repeat;
+}
+
+.symptoms__wrapper {
+  height: 100%;
+  background: url("./img/symptoms-main.png") center bottom no-repeat;
+  padding: 67px 45px 61px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.symptoms__subtitle {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.81rem;
+
+  color: #ffffff;
+}
+.symptoms__title {
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3.69rem;
+
+  color: #ffffff;
+}
+
+.symptoms .accent {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 3.69rem;
+
+  color: var(--color-blue);
+}
+
+.symptoms__description {
+  margin-top: 40px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.81rem;
+  text-align: center;
+
+  color: var(--color-link--inactive);
+}
+.symptoms__list {
+  margin-top: 179px;
+  height: 465px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 98px;
+}
+.symptoms__list-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.symptoms__list-row:first-of-type {
+  width: 1152px;
+}
+
+.symptoms__list-row:nth-of-type(2) {
+  width: 1267px;
+}
+
+.symptoms__list-row:nth-of-type(3) {
+  width: 1350px;
+}
+
+.symptoms__list-col {
+  min-width: 300px;
+  height: 70px;
+  background: rgba(196, 196, 196, 0.2);
+  border-radius: 10px;
+
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 70px;
+  text-align: center;
+
+  padding-right: 33px;
+  padding-left: 100px;
+
+  color: var(--color-blue);
+  position: relative;
+}
+
+.symptoms__list-col:before {
+  content: "";
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: -15px;
+  top: -15px;
+  background: url("./img/coronavirus-2996952-2495219.png") center / contain
+    no-repeat;
+}
