@@ -728,3 +728,141 @@ a:visited {
 .wgv .wgv__readmore--primary {
   color: var(--color-blue);
 }
+
+.get-vaccine {
+  height: 750px;
+  color: black;
+  padding: 40px 70px;
+}
+
+.get-vaccine__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.get-vaccine__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.get-vaccine__header {
+  max-width: 450px;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.23;
+  text-align: center;
+}
+
+.get-vaccine__form {
+  display: flex;
+  flex-direction: column;
+  max-width: 657px;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.get-vaccine__fullname-label,
+.get-vaccine__phone-label {
+  font-weight: 700;
+}
+.get-vaccine__fullname-label {
+  margin-top: 40px;
+}
+.get-vaccine__phone-label {
+  margin-top: 39px;
+}
+.get-vaccine__phone-description {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.get-vaccine__phone-wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 36px;
+}
+
+.get-vaccine__verify-btn {
+  padding: 20px 70px;
+}
+
+.get-vaccine__fullname-input,
+.get-vaccine__phone-input {
+  margin-top: 20px;
+  display: block;
+  width: 650px;
+  height: 70px;
+  background: rgba(11, 21, 60, 0.15);
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 20px 30px;
+}
+
+.get-vaccine__submit-btn {
+  margin-top: 40px;
+  display: block;
+  width: 100%;
+}
+
+.get-vaccine__check-status {
+  margin: 40px auto;
+  display: flex;
+  width: 443px;
+  justify-content: space-between;
+
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.get-vaccine .get-vaccine__check-status-link {
+  color: var(--color-blue);
+}
+
+.get-vaccine__visual {
+  align-self: center;
+  height: 550px;
+  width: 380px;
+  background: #0b153c;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+.get-vaccine__visual-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background: url("./img/get-vaccine__background.png") center bottom / contain
+    no-repeat;
+  padding: 40px 90px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.get-vaccine__visual-title {
+  color: var(--color-text--primary);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.81;
+  text-align: center;
+}
+
+.get-vaccine__img-covid {
+  position: absolute;
+  left: -21px;
+  top: -25px;
+}
+
+.get-vaccine__verify-status-btn {
+  padding: 13px 33px;
+  font-size: 1.25rem;
+}
