@@ -629,7 +629,7 @@ a:visited {
 .wgv__list {
   margin-top: 40px;
   display: flex;
-  /* gap: 74px; */
+  gap: min(1%, 74px);
   justify-content: space-between;
   align-items: flex-end;
 }
