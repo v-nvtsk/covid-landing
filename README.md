@@ -6,3 +6,4 @@ https://www.figma.com/file/x2ZmRmPtueJwijdKoBEWM6/Responsive-Landing-Page-(Commu
  - adaptive tablet
  - adaptive mobile
  - fix footer to pixel perfect
+
