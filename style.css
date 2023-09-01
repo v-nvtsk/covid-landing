@@ -618,7 +618,7 @@ a:visited {
 
 .wgv {
   background: url(./img/home-background.jpg) center / cover no-repeat;
-  padding: 58px 71px 79px;
+  padding: 58px 71px 80px;
   height: 795px;
   display: flex;
   flex-direction: column;
@@ -650,7 +650,6 @@ a:visited {
 }
 
 .wgv__list {
-  margin-top: 40px;
   display: flex;
   gap: min(1%, 74px);
   justify-content: space-between;
@@ -666,7 +665,7 @@ a:visited {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .wgv__list-item--primary {
@@ -702,8 +701,8 @@ a:visited {
 }
 
 .wgv__icon {
-  max-width: 50px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
 }
 
 .wgv__list-item--primary .wgv__icon {
