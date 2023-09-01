@@ -392,7 +392,7 @@ a:visited {
 }
 
 .promo__aside-image-wrapper--left {
-  left: 0;
+  left: -10px;
 }
 
 .promo__aside-image-wrapper--right {
@@ -401,12 +401,11 @@ a:visited {
 
 .specialists {
   height: 100px;
-  transform: translateY(-50%);
+  transform: translate(-5px, -50%);
+  width: 374px;
 }
 
 .specialists__list {
-  position: absolute;
-
   display: flex;
   padding: 20px;
   background: rgba(196, 196, 196, 0.2);
