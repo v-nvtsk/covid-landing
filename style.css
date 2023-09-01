@@ -1028,7 +1028,7 @@ a:visited {
 
 .feedback__list-item {
   height: 480px;
-  background: url(/img/feedback-ampoule.png) center / contain no-repeat;
+  background: url(./img/feedback-ampoule.png) center / contain no-repeat;
   display: flex;
   justify-content: center;
   align-items: Center;
