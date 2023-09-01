@@ -204,7 +204,6 @@ a:visited {
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
-  line-height: 1.22;
 
   color: var(--color-text--primary);
 }
