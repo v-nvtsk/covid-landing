@@ -59,11 +59,11 @@
 
         </div>
         <div class="promo__visual-wrapper">
-          <img class="promo__image" src="./img/home-main-image.png" alt="vaccine">
           <div class="promo__aside-image-wrapper promo__aside-image-wrapper--left">
             <img class="promo__aside-image" src="./img/doctor-taking-safety-measures-for-corona-2996940-2495209.png"
               alt="doctor taking safety measures for COVID">
           </div>
+          <img class="promo__image" src="./img/home-main-image.png" alt="vaccine">
           <div class="promo__aside-image-wrapper promo__aside-image-wrapper--right">
             <img class="promo__aside-image" src="./img/coronavirus-2996952-2495219.png" alt="SARC-COV-2 Model">
           </div>
@@ -83,51 +83,55 @@
           </div>
         </div>
 
-        <div class="promo__schedule schedule" id="schedule">
+        <section class="promo__schedule schedule" id="schedule">
           <div class="schedule__title">
+            <object type="image/svg+xml" data="./img/clock.svg" class="icon icon_clock">
+            </object>
             <h2>Schedule your Vaccination</h2>
           </div>
-          <form class="schedule__form" action="#">
-            <label class="schedule__label label" for="location">
-              <object type="image/svg+xml" data="./img/location.svg" class="icon location">
-              </object>
-              <div class="label__header">Location</div>
-              <div class="input-substitution">Ikeja Lagos, Nigeria</div>
-              <!-- <select name="location" id="location"> -->
-              <!-- <option value="Ikeja Lagos, Nigeria">Ikeja Lagos, Nigeria</option> -->
-              <!-- </select> -->
-            </label>
-            <label class="schedule__label label" for="schedule-date">
-              <object type="image/svg+xml" data="./img/calendar.svg" class="icon calendar">
-              </object>
-              <div class="label__header">Date</div>
-              <div class="input-substitution">29 February, 2022</div>
-              <!-- <input name="schedule-date" id="schedule-date" type="date"> -->
-            </label>
-            <label class="schedule__label label" for="schedule-vaccine-type">
-              <object type="image/svg+xml" data="./img/shield.svg" class="icon shield">
-              </object>
-              <div class="label__header">Vaccine Type</div>
-              <div class="input-substitution">Moderna</div>
-              <!-- <select name="schedule-vaccine-type" id="schedule-vaccine-type"> -->
-              <!-- <option value="Moderna">Moderna</option> -->
-              <!-- <option value="Pfizer">Pfizer</option> -->
-              <!-- <option value="AstraZeneca">AstraZeneca</option> -->
-              <!-- <option value="SINOVAC">SINOVAC</option> -->
-              <!-- </select> -->
-            </label>
-            <button class="btn btn-primary schedule__submit-btn" type="button" class="schedule-submit"
-              onclick="window.dialogIsScheduled.show()">Submit</button>
-          </form>
-          <div class="dialog-wrapper">
-            <dialog id="dialogIsScheduled">
-              <p>Your vaccination is scheduled!</p>
-              <button class="btn btn-primary" type="button" onclick="window.dialogIsScheduled.close()">
-                Close
-              </button>
-            </dialog>
+          <div class="promo__schedule--wrapper">
+            <form class="schedule__form" action="#">
+              <label class="schedule__label label" for="location">
+                <object type="image/svg+xml" data="./img/location.svg" class="icon icon_location">
+                </object>
+                <div class="label__header">Location</div>
+                <div class="input-substitution">Ikeja Lagos, Nigeria</div>
+                <!-- <select name="location" id="location"> -->
+                <!-- <option value="Ikeja Lagos, Nigeria">Ikeja Lagos, Nigeria</option> -->
+                <!-- </select> -->
+              </label>
+              <label class="schedule__label label" for="schedule-date">
+                <object type="image/svg+xml" data="./img/calendar.svg" class="icon calendar">
+                </object>
+                <div class="label__header">Date</div>
+                <div class="input-substitution">29 February, 2022</div>
+                <!-- <input name="schedule-date" id="schedule-date" type="date"> -->
+              </label>
+              <label class="schedule__label label" for="schedule-vaccine-type">
+                <object type="image/svg+xml" data="./img/shield.svg" class="icon shield">
+                </object>
+                <div class="label__header">Vaccine Type</div>
+                <div class="input-substitution">Moderna</div>
+                <!-- <select name="schedule-vaccine-type" id="schedule-vaccine-type"> -->
+                <!-- <option value="Moderna">Moderna</option> -->
+                <!-- <option value="Pfizer">Pfizer</option> -->
+                <!-- <option value="AstraZeneca">AstraZeneca</option> -->
+                <!-- <option value="SINOVAC">SINOVAC</option> -->
+                <!-- </select> -->
+              </label>
+              <button class="btn btn-primary schedule__submit-btn" type="button" class="schedule-submit"
+                onclick="window.dialogIsScheduled.show()">Submit</button>
+            </form>
+            <div class="dialog-wrapper">
+              <dialog id="dialogIsScheduled">
+                <p>Your vaccination is scheduled!</p>
+                <button class="btn btn-primary" type="button" onclick="window.dialogIsScheduled.close()">
+                  Close
+                </button>
+              </dialog>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
 
@@ -171,7 +175,7 @@
 
     <section class="why-get-vaccinated wgv">
       <div class="wgv__title">
-        <div class="wgv__header">Why get vaccinated?</div>
+        <div class="wgv__header">Why get vaccinated today?</div>
         <div class="wgv__description">
           Magna adipiscing at elit at ornare lectus nibh lorem.
           Ac, sed ac lorem pellentesque vestibulum risus matti.
@@ -240,7 +244,7 @@
           <form action="#" class="get-vaccine__form">
             <label class="get-vaccine__fullname-label" for="fullname">
               Patient's Full Name
-              <input class="get-vaccine__fullname-input" type="text" name="fullname" id="fullname"
+              <input class="get-vaccine__input get-vaccine__fullname-input" type="text" name="fullname" id="fullname"
                 placeholder="Full name">
             </label>
             <label class="get-vaccine__phone-label" for="phone">
@@ -249,7 +253,7 @@
                 Notifications for appointment and reminders will be sent to this
                 provided number</p>
               <div class="get-vaccine__phone-wrapper">
-                <input class="get-vaccine__phone-input" type="tel" name="phone" id="phone" placeholder="Phone number"
+                <input class="get-vaccine__input get-vaccine__phone-input" type="tel" name="phone" id="phone" placeholder="Phone number"
                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 <button class="btn btn-primary get-vaccine__verify-btn" type="button">
                   Verify
@@ -304,7 +308,7 @@
     <section id="feedback" class="feedback">
       <div class="feedback__wrapper">
         <h2 class="feedback__title">FEEDBACK</h2>
-        <div class="feedback__subtitle">Covid-19 Prevention</div>
+        <div class="feedback__subtitle">What our Patients Think</div>
         <div class="feedback__list-wrapper">
           <div class="feedback__description">
             Adipiscing nec etiam tortor elit quisque. Arcu aliquet convallis aenean eu velit.
