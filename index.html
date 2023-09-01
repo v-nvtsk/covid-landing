@@ -83,51 +83,55 @@
           </div>
         </div>
 
-        <div class="promo__schedule schedule" id="schedule">
+        <section class="promo__schedule schedule" id="schedule">
           <div class="schedule__title">
+            <object type="image/svg+xml" data="./img/clock.svg" class="icon icon_clock">
+            </object>
             <h2>Schedule your Vaccination</h2>
           </div>
-          <form class="schedule__form" action="#">
-            <label class="schedule__label label" for="location">
-              <object type="image/svg+xml" data="./img/location.svg" class="icon location">
-              </object>
-              <div class="label__header">Location</div>
-              <div class="input-substitution">Ikeja Lagos, Nigeria</div>
-              <!-- <select name="location" id="location"> -->
-              <!-- <option value="Ikeja Lagos, Nigeria">Ikeja Lagos, Nigeria</option> -->
-              <!-- </select> -->
-            </label>
-            <label class="schedule__label label" for="schedule-date">
-              <object type="image/svg+xml" data="./img/calendar.svg" class="icon calendar">
-              </object>
-              <div class="label__header">Date</div>
-              <div class="input-substitution">29 February, 2022</div>
-              <!-- <input name="schedule-date" id="schedule-date" type="date"> -->
-            </label>
-            <label class="schedule__label label" for="schedule-vaccine-type">
-              <object type="image/svg+xml" data="./img/shield.svg" class="icon shield">
-              </object>
-              <div class="label__header">Vaccine Type</div>
-              <div class="input-substitution">Moderna</div>
-              <!-- <select name="schedule-vaccine-type" id="schedule-vaccine-type"> -->
-              <!-- <option value="Moderna">Moderna</option> -->
-              <!-- <option value="Pfizer">Pfizer</option> -->
-              <!-- <option value="AstraZeneca">AstraZeneca</option> -->
-              <!-- <option value="SINOVAC">SINOVAC</option> -->
-              <!-- </select> -->
-            </label>
-            <button class="btn btn-primary schedule__submit-btn" type="button" class="schedule-submit"
-              onclick="window.dialogIsScheduled.show()">Submit</button>
-          </form>
-          <div class="dialog-wrapper">
-            <dialog id="dialogIsScheduled">
-              <p>Your vaccination is scheduled!</p>
-              <button class="btn btn-primary" type="button" onclick="window.dialogIsScheduled.close()">
-                Close
-              </button>
-            </dialog>
+          <div class="promo__schedule--wrapper">
+            <form class="schedule__form" action="#">
+              <label class="schedule__label label" for="location">
+                <object type="image/svg+xml" data="./img/location.svg" class="icon icon_location">
+                </object>
+                <div class="label__header">Location</div>
+                <div class="input-substitution">Ikeja Lagos, Nigeria</div>
+                <!-- <select name="location" id="location"> -->
+                <!-- <option value="Ikeja Lagos, Nigeria">Ikeja Lagos, Nigeria</option> -->
+                <!-- </select> -->
+              </label>
+              <label class="schedule__label label" for="schedule-date">
+                <object type="image/svg+xml" data="./img/calendar.svg" class="icon calendar">
+                </object>
+                <div class="label__header">Date</div>
+                <div class="input-substitution">29 February, 2022</div>
+                <!-- <input name="schedule-date" id="schedule-date" type="date"> -->
+              </label>
+              <label class="schedule__label label" for="schedule-vaccine-type">
+                <object type="image/svg+xml" data="./img/shield.svg" class="icon shield">
+                </object>
+                <div class="label__header">Vaccine Type</div>
+                <div class="input-substitution">Moderna</div>
+                <!-- <select name="schedule-vaccine-type" id="schedule-vaccine-type"> -->
+                <!-- <option value="Moderna">Moderna</option> -->
+                <!-- <option value="Pfizer">Pfizer</option> -->
+                <!-- <option value="AstraZeneca">AstraZeneca</option> -->
+                <!-- <option value="SINOVAC">SINOVAC</option> -->
+                <!-- </select> -->
+              </label>
+              <button class="btn btn-primary schedule__submit-btn" type="button" class="schedule-submit"
+                onclick="window.dialogIsScheduled.show()">Submit</button>
+            </form>
+            <div class="dialog-wrapper">
+              <dialog id="dialogIsScheduled">
+                <p>Your vaccination is scheduled!</p>
+                <button class="btn btn-primary" type="button" onclick="window.dialogIsScheduled.close()">
+                  Close
+                </button>
+              </dialog>
+            </div>
           </div>
-        </div>
+        </section>
       </div>
     </section>
 
