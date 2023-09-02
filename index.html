@@ -69,11 +69,14 @@
           </div>
           <div class="promo__specialists specialists">
             <ul class="specialists__list">
-              <li class="specialists__item specialists__item--image"><img src="./img/home-spec-1.jpg" alt="doctor1">
+              <li class="specialists__item specialists__item--image">
+                <img class="specialists__photo" src="./img/home-spec-1.jpg" alt="doctor1">
               </li>
-              <li class="specialists__item specialists__item--image"><img src="./img/home-spec-2.jpg" alt="doctor2">
+              <li class="specialists__item specialists__item--image">
+                <img class="specialists__photo" src="./img/home-spec-2.jpg" alt="doctor2">
               </li>
-              <li class="specialists__item specialists__item--image"><img src="./img/home-spec-3.jpg" alt="doctor3">
+              <li class="specialists__item specialists__item--image">
+                <img class="specialists__photo" src="./img/home-spec-3.jpg" alt="doctor3">
               </li>
               <li class="specialists__item specialists__item--info">
                 <p class="specialists__count">20+</p>
@@ -89,7 +92,7 @@
             </object>
             <h2>Schedule your Vaccination</h2>
           </div>
-          <div class="promo__schedule--wrapper">
+          <div class="promo__schedule-wrapper ">
             <form class="schedule__form" action="#">
               <label class="schedule__label label" for="location">
                 <object type="image/svg+xml" data="./img/location.svg" class="icon icon_location">
@@ -198,7 +201,7 @@
           </div>
           <div class="list-item__next">
             <a href="#" class="wgv__readmore wgv__readmore--primary">Read more
-              <object data="./img/arrow.svg" type="image/svg+xml"></object>
+              <object class="wgv__readmore-icon" data="./img/arrow.svg" type="image/svg+xml"></object>
             </a>
           </div>
         </li>
@@ -212,7 +215,7 @@
           </div>
           <div class="list-item__next">
             <a href="#" class="wgv__readmore">Read more
-              <object data="./img/arrow.svg" type="image/svg+xml"></object>
+              <object class="wgv__readmore-icon" data="./img/arrow.svg" type="image/svg+xml"></object>
             </a>
           </div>
         </li>
@@ -226,7 +229,7 @@
           </div>
           <div class="list-item__next">
             <a href="#" class="wgv__readmore">Read more
-              <object data="./img/arrow.svg" type="image/svg+xml"></object>
+              <object class="wgv__readmore-icon" data="./img/arrow.svg" type="image/svg+xml"></object>
             </a>
           </div>
         </li>
@@ -253,8 +256,8 @@
                 Notifications for appointment and reminders will be sent to this
                 provided number</p>
               <div class="get-vaccine__phone-wrapper">
-                <input class="get-vaccine__input get-vaccine__phone-input" type="tel" name="phone" id="phone" placeholder="Phone number"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                <input class="get-vaccine__input get-vaccine__phone-input" type="tel" name="phone" id="phone"
+                  placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 <button class="btn btn-primary get-vaccine__verify-btn" type="button">
                   Verify
                 </button>
