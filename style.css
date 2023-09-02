@@ -1295,3 +1295,170 @@ a:visited {
     display: none;
   }
 
+  /* OK */
+  .promo {
+    padding-top: 85px;
+    height: auto;
+  }
+
+  /* OK */
+  .promo__wrapper {
+    margin-top: 32px;
+    padding: 0 35px;
+    grid-template-columns: 1fr;
+  }
+
+  /* OK */
+  .promo__content-wrapper {
+    max-width: none;
+    width: 100%;
+  }
+
+  /* OK */
+  .promo__header {
+    margin-top: 20px;
+  }
+
+  /* OK */
+  .promo__information {
+    margin-top: 20px;
+  }
+
+  /* OK */
+  .promo__buttons-block {
+    /* OK */
+    margin-top: 40px;
+    gap: 20px;
+  }
+
+  /* OK */
+  .promo__buttons-block .btn {
+    width: auto;
+    max-width: 138px;
+    border-radius: 20px;
+    height: 50px;
+    flex-grow: 1;
+  }
+
+  /* OK */
+  .promo__visual-wrapper {
+    /* OK */
+    margin-top: 50px;
+    padding: 0 25px 34px;
+  }
+
+  /* OK */
+  .promo__image {
+    /* OK */
+    background-color: var(--color-blue);
+    border-radius: 21px;
+    margin: 0;
+
+    width: 100%;
+  }
+
+  /* OK */
+  .promo__aside-image-wrapper {
+    /* OK */
+    bottom: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+  /* OK */
+  .promo__aside-image-wrapper--left {
+    left: 0;
+  }
+
+  /* OK */
+  .promo__aside-image-wrapper--right {
+    right: 0;
+  }
+
+  /* OK */
+  .promo__aside-image {
+    width: 100%;
+  }
+
+  /* OK */
+  .specialists {
+    /* OK */
+    height: 69px;
+    width: 238px;
+    transform: translateX(-25px);
+    position: absolute;
+    padding: 15px 20px;
+  }
+
+  /* OK */
+  .specialists__item--image:not(:first-of-type) {
+    margin-left: -3px;
+  }
+
+  /* OK */
+  .specialists__photo {
+    border-radius: 6px;
+    height: 39px;
+    width: 39px;
+  }
+
+  /* OK */
+  .promo__schedule {
+    /* OK */
+    grid-row: 3/4;
+    grid-column: 1/2;
+    position: relative;
+    margin-top: 143px;
+  }
+
+  /* OK */
+  .schedule__title {
+    /* OK */
+    font-size: 1.75rem;
+  }
+
+  /* OK */
+  .promo__schedule-wrapper {
+    /* OK */
+    height: 100%;
+    flex-direction: column;
+    padding: 20px 10px 10px;
+  }
+
+  /* OK */
+  .schedule__form {
+    /* OK */
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  /* OK */
+  .schedule__label {
+    /* OK */
+    column-gap: 10px;
+    font-size: 14px;
+    grid-template-columns: 30px 1fr;
+    line-height: 1;
+    height: 34px;
+  }
+
+  /* OK */
+  .promo .icon {
+    /* OK */
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+  }
+
+  /* OK */
+  .schedule__submit-btn {
+    /* OK */
+    width: 150px;
+    height: 50px;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
