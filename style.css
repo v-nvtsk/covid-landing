@@ -1533,3 +1533,120 @@ a:visited {
     font-size: 1.125rem;
   }
 
+  /* OK */
+  .wgv {
+    padding: 42px 35px;
+    height: auto;
+    gap: unset;
+  }
+
+  /* OK */
+  .wgv__title {
+    flex-direction: column;
+  }
+
+  /* OK */
+  .wgv__header {
+    width: 100%;
+  }
+
+  /* OK */
+  .wgv__description {
+    margin-top: 17px;
+    font-size: 14px;
+    width: 100%;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .wgv__list {
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+
+  /* OK */
+  .wgv__list-item {
+    width: 50vw;
+    height: auto;
+    padding: 20px 15px 24px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+  }
+
+  /* OK */
+  .wgv__list-item--primary {
+    width: 276px;
+    height: 280px;
+
+    background: rgba(196, 196, 196, 0.2);
+    border-radius: 20px 80px 20px 20px;
+  }
+
+  /* OK */
+  .wgv__icon-wrapper {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    border: none;
+    padding: 20px 20px 30px;
+  }
+
+  /* OK */
+  .wgv__list-item--primary .wgv__icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  /* OK */
+  .wgv__icon,
+  .wgv__list-item--primary .wgv__icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* OK */
+  .list-item__title {
+    margin-top: 30px;
+  }
+
+  /* OK */
+  .list-item__title--primary {
+    width: 172px;
+  }
+
+  /* OK */
+  .list-item__description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /* OK */
+  .list-item__next {
+    margin-top: 21px;
+    display: flex;
+    align-items: Center;
+  }
+
+  /* OK */
+  .wgv .wgv__readmore {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .wgv .wgv__readmore--primary {
+    color: var(--color-blue);
+  }
+
+  /* OK */
+  .wgv__readmore-icon {
+    height: 20px;
+    width: 20px;
+  }
+  
+}
