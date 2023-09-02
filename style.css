@@ -1462,3 +1462,13 @@ a:visited {
     font-size: 14px;
   }
 
+  /* OK */
+  .vaccine-types {
+    height: 39px;
+  }
+
+  /* OK */
+  .vaccine-types__list {
+    gap: 10px;
+  }
+
