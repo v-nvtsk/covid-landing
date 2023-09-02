@@ -1273,3 +1273,10 @@ a:visited {
   html {
     font-size: 8px;
   }
+
+  .btn {
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+  }
+
