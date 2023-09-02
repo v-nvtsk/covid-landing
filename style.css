@@ -1030,7 +1030,7 @@ a:visited {
 
 .feedback {
   height: 934px;
-  padding: 57px 67px;
+  padding: 57px min(4.65%, 67px);
   background: url("./img/feedback-background.jpg") center / cover no-repeat,
     rgba(255, 255, 255, 0.5);
   position: relative;
@@ -1065,11 +1065,12 @@ a:visited {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
 .feedback__description {
-  width: 952px;
+  align-self: center;
+  max-width: 952px;
   font-weight: 500;
   font-size: 1.5rem;
   text-align: center;
@@ -1080,7 +1081,7 @@ a:visited {
 .feedback__list {
   margin-top: -58px;
   display: flex;
-  gap: 53px;
+  gap: min(4%, 53px);
 }
 
 .feedback__list-item {
@@ -1096,7 +1097,7 @@ a:visited {
 }
 
 .card {
-  width: 400px;
+  max-width: 400px;
   height: 250px;
   padding: 30px 33px 44px 33px;
   background: rgba(196, 196, 196, 0.5);
