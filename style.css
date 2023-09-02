@@ -317,7 +317,8 @@ a:visited {
 }
 
 .promo__content-wrapper {
-  width: 603px;
+  max-width: 603px;
+  width: 100%;
 }
 
 .promo__slogan {
@@ -449,7 +450,7 @@ a:visited {
   color: var(--color-text--primary);
 }
 
-.specialists__item img {
+.specialists__photo {
   border-radius: 10px;
 }
 
@@ -473,7 +474,7 @@ a:visited {
   gap: 20px;
 }
 
-.promo__schedule--wrapper {
+.promo__schedule-wrapper {
   height: 160px;
   background: rgba(196, 196, 196, 0.1);
   border-radius: 20px 20px 0px 0px;
