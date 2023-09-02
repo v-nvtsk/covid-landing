@@ -1266,3 +1266,10 @@ a:visited {
 }
 
 @media screen and (max-width: 768px) {
+  .page__wrapper {
+    width: 100%;
+  }
+
+  html {
+    font-size: 8px;
+  }
