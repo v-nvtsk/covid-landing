@@ -1505,7 +1505,6 @@ a:visited {
   .results__form {
     flex-direction: column;
     padding: 21px 14px 48px;
-
   }
 
   /* OK */
@@ -1658,5 +1657,4 @@ a:visited {
     height: 20px;
     width: 20px;
   }
-  
 }
