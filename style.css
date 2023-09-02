@@ -1255,6 +1255,8 @@ a:visited {
 .page__footer {
   padding: 327px 70px 123px;
   position: relative;
+  height: 500px;
+  background: #0b153c;
 }
 
 .footer__wrapper {
