@@ -1280,3 +1280,18 @@ a:visited {
     border-radius: 10px;
   }
 
+  /* OK */
+  .page__header {
+    padding: 0 35px;
+  }
+
+  /* OK */
+  .nav-bar {
+    display: none;
+  }
+
+  /* OK */
+  .check-status-btn {
+    display: none;
+  }
+
