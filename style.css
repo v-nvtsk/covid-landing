@@ -786,17 +786,23 @@ a:visited {
 
 .get-vaccine__wrapper {
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: space-between;
+
+  grid-template-areas:
+    "header visual"
+    "content visual";
 }
 
 .get-vaccine__content {
+  grid-area: content;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .get-vaccine__header {
+  grid-area: header;
   margin-top: 40px;
   max-width: 450px;
   font-weight: 700;
@@ -883,6 +889,7 @@ a:visited {
 }
 
 .get-vaccine__visual {
+  grid-area: visual;
   align-self: center;
   height: 550px;
   width: 380px;
@@ -975,43 +982,35 @@ a:visited {
 .symptoms__list {
   margin-top: 179px;
   height: 465px;
+  padding: 0 42px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 98px;
-}
-.symptoms__list-row {
-  display: flex;
-  justify-content: space-between;
-}
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* column-gap: min(31%, 450px); */
+  column-gap: clamp(160px, 30%, 400px);
 
-.symptoms__list-row:first-of-type {
-  width: 1152px;
-}
-
-.symptoms__list-row:nth-of-type(2) {
-  width: 1267px;
-}
-
-.symptoms__list-row:nth-of-type(3) {
-  width: 1350px;
+  justify-content: center;
 }
 
 .symptoms__list-col {
-  min-width: 300px;
+  /* width: min(30vw, 330px); */
+  width: 100%;
+  max-width: clamp(300px, 100%, 360px);
+
   height: 70px;
   background: rgba(196, 196, 196, 0.2);
   border-radius: 10px;
 
   font-weight: 600;
   font-size: 1.25rem;
-  line-height: 70px;
+  line-height: 1.25;
   text-align: center;
+  display: flex;
+  align-items: center;
 
-  padding-right: 33px;
-  padding-left: 100px;
+  padding-right: 10px;
+  padding-left: 85px;
 
   color: var(--color-blue);
   position: relative;
@@ -1026,6 +1025,37 @@ a:visited {
   top: -15px;
   background: url("./img/coronavirus-2996952-2495219.png") center / contain
     no-repeat;
+}
+
+.symptom_high-fever {
+  /* max-width: 300px; */
+  justify-self: end;
+  grid-row: 1;
+}
+.symptom_loss-of-sense-of-taste {
+  /* max-width: 360px; */
+  justify-self: start;
+  grid-row: 1;
+}
+.symptom_loss-sense-of-smell {
+  /* max-width: 300px; */
+  justify-self: center;
+  grid-row: 2;
+}
+.symptom_difficulty-breathing {
+  /* max-width: 300px; */
+  justify-self: center;
+  grid-row: 2;
+}
+.symptom_dry-cough {
+  /* max-width: 300px; */
+  justify-self: start;
+  grid-row: 3;
+}
+.symptom_sore-throat {
+  /* max-width: 300px; */
+  justify-self: end;
+  grid-row: 3;
 }
 
 .feedback {
@@ -1170,13 +1200,21 @@ a:visited {
 }
 
 .quote {
+  padding: 18px;
+  border-radius: 50px;
+  background: rgba(196, 196, 196, 0.15);
   z-index: 10;
   bottom: -202px;
   left: 50%;
   transform: translateX(-50%);
   position: absolute;
 
-  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.quote__wrapper {
+  width: 72vw;
   max-width: 1030px;
   height: 400px;
 
@@ -1186,7 +1224,6 @@ a:visited {
   flex-direction: column;
   align-items: center;
 
-  box-shadow: 0 0 0px 18px rgba(196, 196, 196, 0.15);
   border-radius: 50px;
 }
 
@@ -1628,7 +1665,7 @@ a:visited {
 
   /* OK */
   .list-item__description {
-    font-weight: 500;
+    margin-top: 20px;
     font-size: 12px;
     line-height: 15px;
   }
@@ -1656,5 +1693,434 @@ a:visited {
   .wgv__readmore-icon {
     height: 20px;
     width: 20px;
+  }
+
+  /* OK */
+  .get-vaccine {
+    height: auto;
+    padding: 40px 35px 40px;
+    /* NOT OK */
+    /* color: black; */
+  }
+
+  /* OK */
+  .get-vaccine__wrapper {
+    flex-direction: column;
+    grid-template-areas:
+      "header"
+      "visual"
+      "content";
+    justify-content: center;
+  }
+
+  /* OK */
+  .get-vaccine__header {
+    margin-top: 0;
+    max-width: 450px;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.23;
+    text-align: center;
+  }
+
+  /* OK */
+  .get-vaccine__form {
+    max-width: none;
+    width: 100%;
+  }
+
+  /* OK */
+  .get-vaccine__fullname-label {
+    margin-top: 38px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .get-vaccine__phone-label {
+    margin-top: 20px;
+  }
+
+  /* OK */
+  .get-vaccine__phone-description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .get-vaccine__phone-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* OK */
+  .get-vaccine__verify-btn {
+    width: 150px;
+    padding: 0;
+  }
+
+  /* OK */
+  .get-vaccine__input {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  /* OK */
+  .get-vaccine__submit-btn {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  /* OK */
+  .get-vaccine__check-status {
+    width: 100%;
+    margin: 20px auto 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .get-vaccine__visual {
+    width: 289px;
+    order: 2;
+    margin-left: 15px;
+    margin-top: 39px;
+    height: 418px;
+  }
+
+  /* OK */
+  .get-vaccine__visual-title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .get-vaccine__img-covid {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* OK */
+  .get-vaccine__verify-status-btn {
+    width: 200px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .symptoms {
+    height: auto;
+  }
+
+  /* OK */
+  .symptoms__wrapper {
+    background: url("./img/symptoms-main.png") center bottom / 222px no-repeat;
+    padding: 0;
+  }
+
+  /* OK */
+  .symptoms__subtitle {
+    margin-top: 25px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 22px;
+  }
+
+  /* OK */
+  .symptoms__title {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0 22px;
+  }
+
+  /* OK */
+  .symptoms__description {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 22px;
+  }
+
+  /* OK */
+  .symptoms__list {
+    height: 155px;
+    margin-top: 43px;
+
+    max-width: 425px;
+    padding: 0 22px 44px;
+    column-gap: max(20%, 55px);
+    row-gap: 22px;
+  }
+
+  /* OK */
+  .symptoms__list-col {
+    width: clamp(110px, 30%, 130px);
+
+    height: 22px;
+    line-height: 1;
+    font-size: 8px;
+    padding-right: 5px;
+    padding-left: 10px;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  /* OK */
+  .symptoms__list-col:before {
+    /* OK */
+    height: 30px;
+    width: 30px;
+    top: -5px;
+    /* NOT OK */
+    content: "";
+    position: absolute;
+    left: -15px;
+    background: url("./img/coronavirus-2996952-2495219.png") center / contain
+      no-repeat;
+  }
+
+  /* OK */
+  .symptom_high-fever {
+    justify-self: end;
+    grid-row: 1;
+  }
+  .symptom_loss-of-sense-of-taste {
+    justify-self: start;
+    grid-row: 1;
+  }
+  .symptom_dry-cough {
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .symptom_difficulty-breathing {
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .symptom_loss-sense-of-smell {
+    justify-self: start;
+    grid-row: 3;
+  }
+  .symptom_sore-throat {
+    justify-self: end;
+    grid-row: 3;
+  }
+
+  /* OK */
+  .feedback {
+    height: auto;
+    padding: 0 30px 158px;
+  }
+
+  /* OK */
+  .feedback__title {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .feedback__subtitle {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /* OK */
+  .feedback__list-wrapper {
+    margin-top: 10px;
+  }
+
+  /* OK */
+  .feedback__description {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /* OK */
+  .feedback__list {
+    margin-top: 16px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* OK */
+  .feedback__list-item {
+    height: 205px;
+  }
+
+  /* OK */
+  .feedback__card {
+    margin-top: 0;
+  }
+
+  /* OK */
+  .card {
+    height: 190px;
+    padding: 23px;
+  }
+
+  /* OK */
+  .card__header {
+    grid-template-columns: 54px auto;
+    column-gap: 15px;
+  }
+
+  /* OK */
+  .card__image {
+    border-radius: 13px;
+    width: 100%;
+  }
+
+  /* OK */
+  .card__name {
+    font-size: 15.28px;
+    line-height: 19px;
+  }
+
+  /* OK */
+  .card__place {
+    font-size: 9.485px;
+    line-height: 12px;
+  }
+
+  /* OK */
+  .card__text {
+    margin-top: 31px;
+    font-size: 12.195px;
+    line-height: 15px;
+  }
+
+  /* OK */
+  .quote {
+    padding: 30px 12px;
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 20px;
+
+    bottom: -92px;
+  }
+
+  /* OK */
+  .quote__wrapper {
+    width: 75vw;
+    max-width: 576px;
+    height: 147px;
+    border-radius: 20px;
+    padding-bottom: 28px;
+
+  }
+
+  /* OK */
+  .quote__title {
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /* OK */
+  .quote__subtitle {
+    margin-top: 5px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  /* OK */
+  .quote__form {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 300px;
+    padding: 0 23px;
+    height: 40px;
+  }
+
+  /* OK */
+  .quote__input-email {
+    font-size: 10px;
+    border-radius: 20px 0 0 20px;
+  }
+
+  /* OK */
+  .quote__send-btn {
+    width: 58px;
+    height: 40px;
+    padding: 10px 23px 11px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  /* OK */
+  .quote .icon-send {
+    width: 23px;
+  }
+
+  /* OK */
+  .page__footer {
+    height: 351px;
+    padding: 133px 35px 30px;
+  }
+
+  /* OK */
+  .footer__wrapper {
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* OK */
+  .footer__logo {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  /* OK */
+  .page__footer .nav-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* OK */
+  .page__footer .nav-bar__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* OK */
+  .footer__social {
+    margin-left: 0;
+    margin-top: 20px;
+    gap: 0;
+  }
+
+  /* OK */
+  .footer__social .icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* OK */
+  .footer__social .icon:not(:last-of-type) {
+    margin-left: 5px;
+  }
+
+  /* OK */
+  .footer__logo {
+    position: relative;
+  }
+
+  /* OK */
+  .nav-link {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .nav-link--active {
+    align-items: flex-start;
+    color: var(--color-link--active);
   }
 }

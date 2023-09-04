@@ -240,10 +240,10 @@
 
     <section id="get-vaccine" class="get-vaccine">
       <div class="get-vaccine__wrapper">
+        <h2 class="get-vaccine__header">
+          Get your vaccine registration today
+        </h2>
         <div class="get-vaccine__content">
-          <h2 class="get-vaccine__header">
-            Get your vaccine registration today
-          </h2>
           <form action="#" class="get-vaccine__form">
             <label class="get-vaccine__fullname-label" for="fullname">
               Patient's Full Name
@@ -291,19 +291,12 @@
           Mi vestibulum, ullamcorper venenatis imperdiet augue arcu donec neque.
         </div>
         <div class="symptoms__list">
-          <div class="symptoms__list-row">
-            <div class="symptoms__list-col">High Fever</div>
-            <div class="symptoms__list-col">Loss of sense of taste</div>
-          </div>
-          <div class="symptoms__list-row">
-            <div class="symptoms__list-col">Loss sense of smell</div>
-            <div class="symptoms__list-col">Difficulty Breathing</div>
-          </div>
-          <div class="symptoms__list-row">
-            <div class="symptoms__list-col">Dry cough</div>
-            <div class="symptoms__list-col">Sore Throat</div>
-          </div>
-
+          <div class="symptoms__list-col symptom_high-fever">High Fever</div>
+          <div class="symptoms__list-col symptom_loss-of-sense-of-taste">Loss of sense of taste</div>
+          <div class="symptoms__list-col symptom_loss-sense-of-smell">Loss sense of smell</div>
+          <div class="symptoms__list-col symptom_difficulty-breathing">Difficulty Breathing</div>
+          <div class="symptoms__list-col symptom_dry-cough">Dry cough</div>
+          <div class="symptoms__list-col symptom_sore-throat">Sore Throat</div>
         </div>
       </div>
     </section>
@@ -375,15 +368,17 @@
       </div>
 
       <div id="quote" class="quote">
-        <h2 class="quote__title">Get a quote</h2>
-        <div class="quote__subtitle">Please do enter your email address below</div>
-        <form class="quote__form">
-          <input class="quote__input-email" type="email" placeholder="Your@e-mail.com">
-          <button class="btn quote__send-btn" type="button">
-            <object type="image/svg+xml" data="./img/send.svg" class="icon icon-send">
-            </object>
-          </button>
-        </form>
+        <div class="quote__wrapper">
+          <h2 class="quote__title">Get a quote</h2>
+          <div class="quote__subtitle">Please do enter your email address below</div>
+          <form class="quote__form">
+            <input class="quote__input-email" type="email" placeholder="Your@e-mail.com">
+            <button class="btn quote__send-btn" type="button">
+              <object type="image/svg+xml" data="./img/send.svg" class="icon icon-send">
+              </object>
+            </button>
+          </form>
+        </div>
       </div>
     </section>
 
