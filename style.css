@@ -1913,6 +1913,90 @@ a:visited {
   }
 
   /* OK */
+  .feedback {
+    height: auto;
+    padding: 0 30px 158px;
+  }
+
+  /* OK */
+  .feedback__title {
+    margin-top: 30px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .feedback__subtitle {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /* OK */
+  .feedback__list-wrapper {
+    margin-top: 10px;
+  }
+
+  /* OK */
+  .feedback__description {
+    font-size: 12px;
+    line-height: 15px;
+  }
+
+  /* OK */
+  .feedback__list {
+    margin-top: 16px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* OK */
+  .feedback__list-item {
+    height: 205px;
+  }
+
+  /* OK */
+  .feedback__card {
+    margin-top: 0;
+  }
+
+  /* OK */
+  .card {
+    height: 190px;
+    padding: 23px;
+  }
+
+  /* OK */
+  .card__header {
+    grid-template-columns: 54px auto;
+    column-gap: 15px;
+  }
+
+  /* OK */
+  .card__image {
+    border-radius: 13px;
+    width: 100%;
+  }
+
+  /* OK */
+  .card__name {
+    font-size: 15.28px;
+    line-height: 19px;
+  }
+
+  /* OK */
+  .card__place {
+    font-size: 9.485px;
+    line-height: 12px;
+  }
+
+  /* OK */
+  .card__text {
+    margin-top: 31px;
+    font-size: 12.195px;
+    line-height: 15px;
+  }
+
+  /* OK */
   .quote {
     padding: 30px 12px;
     background: rgba(196, 196, 196, 0.15);
