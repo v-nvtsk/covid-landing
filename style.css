@@ -1033,6 +1033,37 @@ a:visited {
     no-repeat;
 }
 
+.symptom_high-fever {
+  grid-area: hf;
+  grid-column: 4/9;
+  grid-row: 1;
+}
+.symptom_loss-of-sense-of-taste {
+  grid-area: losot;
+  grid-column: 15/21;
+  grid-row: 1;
+}
+.symptom_loss-sense-of-smell {
+  grid-area: lsos;
+  grid-column: 3/8;
+  grid-row: 2;
+}
+.symptom_difficulty-breathing {
+  grid-area: db;
+  grid-column: 17/22;
+  grid-row: 2;
+}
+.symptom_dry-cough {
+  grid-area: dc;
+  grid-column: 2/6;
+  grid-row: 3;
+}
+.symptom_sore-throat {
+  grid-area: st;
+  grid-column: 18/23;
+  grid-row: 3;
+}
+
 .feedback {
   height: 934px;
   padding: 57px min(4.65%, 67px);
