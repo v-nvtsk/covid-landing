@@ -982,22 +982,32 @@ a:visited {
 .symptoms__list {
   margin-top: 179px;
   height: 465px;
+  padding: 0 42px;
 
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(22, 1fr);
+  grid-template-columns: 1fr 1fr;
+  /* column-gap: min(31%, 450px); */
+  column-gap: clamp(160px, 30%, 400px);
+
+  justify-content: center;
 }
 
 .symptoms__list-col {
-  min-width: auto;
+  /* width: min(30vw, 330px); */
+  width: 100%;
+  max-width: clamp(300px, 100%, 360px);
+
   height: 70px;
   background: rgba(196, 196, 196, 0.2);
   border-radius: 10px;
 
   font-weight: 600;
   font-size: 1.25rem;
-  line-height: 70px;
+  line-height: 1.25;
   text-align: center;
+  display: flex;
+  align-items: center;
 
   padding-right: 10px;
   padding-left: 85px;
@@ -1018,33 +1028,33 @@ a:visited {
 }
 
 .symptom_high-fever {
-  grid-area: hf;
-  grid-column: 4/9;
+  /* max-width: 300px; */
+  justify-self: end;
   grid-row: 1;
 }
 .symptom_loss-of-sense-of-taste {
-  grid-area: losot;
-  grid-column: 15/21;
+  /* max-width: 360px; */
+  justify-self: start;
   grid-row: 1;
 }
 .symptom_loss-sense-of-smell {
-  grid-area: lsos;
-  grid-column: 3/8;
+  /* max-width: 300px; */
+  justify-self: center;
   grid-row: 2;
 }
 .symptom_difficulty-breathing {
-  grid-area: db;
-  grid-column: 17/22;
+  /* max-width: 300px; */
+  justify-self: center;
   grid-row: 2;
 }
 .symptom_dry-cough {
-  grid-area: dc;
-  grid-column: 2/6;
+  /* max-width: 300px; */
+  justify-self: start;
   grid-row: 3;
 }
 .symptom_sore-throat {
-  grid-area: st;
-  grid-column: 18/23;
+  /* max-width: 300px; */
+  justify-self: end;
   grid-row: 3;
 }
 
