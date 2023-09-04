@@ -1673,6 +1673,123 @@ a:visited {
   }
 
   /* OK */
+  .get-vaccine {
+    height: auto;
+    padding: 40px 35px 40px;
+    /* NOT OK */
+    /* color: black; */
+  }
+
+  /* OK */
+  .get-vaccine__wrapper {
+    flex-direction: column;
+    grid-template-areas:
+      "header"
+      "visual"
+      "content";
+    justify-content: center;
+  }
+
+  /* OK */
+  .get-vaccine__header {
+    margin-top: 0;
+    max-width: 450px;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.23;
+    text-align: center;
+  }
+
+  /* OK */
+  .get-vaccine__form {
+    max-width: none;
+    width: 100%;
+  }
+
+  /* OK */
+  .get-vaccine__fullname-label {
+    margin-top: 38px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .get-vaccine__phone-label {
+    margin-top: 20px;
+  }
+
+  /* OK */
+  .get-vaccine__phone-description {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .get-vaccine__phone-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  /* OK */
+  .get-vaccine__verify-btn {
+    width: 150px;
+    padding: 0;
+  }
+
+  /* OK */
+  .get-vaccine__input {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+
+  /* OK */
+  .get-vaccine__submit-btn {
+    margin-top: 60px;
+    width: 100%;
+  }
+
+  /* OK */
+  .get-vaccine__check-status {
+    width: 100%;
+    margin: 20px auto 0;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .get-vaccine__visual {
+    width: 289px;
+    order: 2;
+    margin-left: 15px;
+    margin-top: 39px;
+    height: 418px;
+  }
+
+  /* OK */
+  .get-vaccine__visual-title {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
+  .get-vaccine__img-covid {
+    width: 75px;
+    height: 75px;
+  }
+
+  /* OK */
+  .get-vaccine__verify-status-btn {
+    width: 200px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  /* OK */
   .quote {
     padding: 30px 12px;
     background: rgba(196, 196, 196, 0.15);
