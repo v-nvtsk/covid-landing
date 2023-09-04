@@ -1635,7 +1635,7 @@ a:visited {
 
   /* OK */
   .list-item__description {
-    font-weight: 500;
+    margin-top: 20px;
     font-size: 12px;
     line-height: 15px;
   }
