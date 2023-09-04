@@ -983,11 +983,9 @@ a:visited {
   margin-top: 179px;
   height: 465px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 98px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(22, 1fr);
 }
 .symptoms__list-row {
   display: flex;
