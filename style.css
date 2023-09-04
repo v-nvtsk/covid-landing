@@ -1007,7 +1007,7 @@ a:visited {
 }
 
 .symptoms__list-col {
-  min-width: 300px;
+  min-width: auto;
   height: 70px;
   background: rgba(196, 196, 196, 0.2);
   border-radius: 10px;
@@ -1017,8 +1017,8 @@ a:visited {
   line-height: 70px;
   text-align: center;
 
-  padding-right: 33px;
-  padding-left: 100px;
+  padding-right: 10px;
+  padding-left: 85px;
 
   color: var(--color-blue);
   position: relative;
