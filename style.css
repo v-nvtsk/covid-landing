@@ -987,22 +987,6 @@ a:visited {
   display: grid;
   grid-template-columns: repeat(22, 1fr);
 }
-.symptoms__list-row {
-  display: flex;
-  justify-content: space-between;
-}
-
-.symptoms__list-row:first-of-type {
-  width: 1152px;
-}
-
-.symptoms__list-row:nth-of-type(2) {
-  width: 1267px;
-}
-
-.symptoms__list-row:nth-of-type(3) {
-  width: 1350px;
-}
 
 .symptoms__list-col {
   min-width: auto;
