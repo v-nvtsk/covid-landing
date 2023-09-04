@@ -1813,6 +1813,106 @@ a:visited {
   }
 
   /* OK */
+  .symptoms {
+    height: auto;
+  }
+
+  /* OK */
+  .symptoms__wrapper {
+    background: url("./img/symptoms-main.png") center bottom / 222px no-repeat;
+    padding: 0;
+  }
+
+  /* OK */
+  .symptoms__subtitle {
+    margin-top: 25px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 22px;
+  }
+
+  /* OK */
+  .symptoms__title {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 0 22px;
+  }
+
+  /* OK */
+  .symptoms__description {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 0 22px;
+  }
+
+  /* OK */
+  .symptoms__list {
+    height: 155px;
+    margin-top: 43px;
+
+    max-width: 425px;
+    padding: 0 22px 44px;
+    column-gap: max(20%, 55px);
+    row-gap: 22px;
+  }
+
+  /* OK */
+  .symptoms__list-col {
+    width: clamp(110px, 30%, 130px);
+
+    height: 22px;
+    line-height: 1;
+    font-size: 8px;
+    padding-right: 5px;
+    padding-left: 10px;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  /* OK */
+  .symptoms__list-col:before {
+    /* OK */
+    height: 30px;
+    width: 30px;
+    top: -5px;
+    /* NOT OK */
+    content: "";
+    position: absolute;
+    left: -15px;
+    background: url("./img/coronavirus-2996952-2495219.png") center / contain
+      no-repeat;
+  }
+
+  /* OK */
+  .symptom_high-fever {
+    justify-self: end;
+    grid-row: 1;
+  }
+  .symptom_loss-of-sense-of-taste {
+    justify-self: start;
+    grid-row: 1;
+  }
+  .symptom_dry-cough {
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .symptom_difficulty-breathing {
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .symptom_loss-sense-of-smell {
+    justify-self: start;
+    grid-row: 3;
+  }
+  .symptom_sore-throat {
+    justify-self: end;
+    grid-row: 3;
+  }
+
+  /* OK */
   .quote {
     padding: 30px 12px;
     background: rgba(196, 196, 196, 0.15);
