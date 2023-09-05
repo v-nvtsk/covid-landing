@@ -1795,4 +1795,78 @@ a:visited {
     justify-self: end;
     grid-row: 3;
   }
+
+  .feedback {
+    height: auto;
+    padding: 0 30px 158px;
+  }
+
+  .feedback__title {
+    margin-top: 46px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .feedback__subtitle {
+    margin-top: 20px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .feedback__list-wrapper {
+    margin-top: 40px;
+  }
+
+  .feedback__description {
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 580px;
+  }
+
+  .feedback__list {
+    margin-top: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .feedback__list-item {
+    height: 305px;
+  }
+
+  .feedback__card {
+    margin-top: 0;
+  }
+
+  .card {
+    height: 250px;
+    padding: 30px 30px 44px;
+  }
+
+  .card__header {
+    grid-template-columns: 70px auto;
+    column-gap: 20px;
+  }
+
+  .card__image {
+    border-radius: 20px;
+  }
+
+  .card__name {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card__place {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .card__text {
+    margin-top: 40px;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
