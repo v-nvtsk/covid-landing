@@ -1539,7 +1539,7 @@ a:visited {
     font-size: 14px;
     height: 50px;
   }
-  
+
   .wgv {
     padding: 58px 70px 45px;
     height: auto;
@@ -1708,5 +1708,91 @@ a:visited {
     width: 200px;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .symptoms {
+    height: auto;
+  }
+
+  .symptoms__wrapper {
+    background: url("./img/symptoms-main.png") center bottom / 458px no-repeat;
+    padding: 0;
+  }
+
+  .symptoms__subtitle {
+    margin-top: 40px;
+
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+  }
+
+  .symptoms__title {
+    margin-top: 10px;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .symptoms__description {
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 22px;
+    max-width: 553px;
+  }
+
+  .symptoms__list {
+    height: 343px;
+    margin-top: 43px;
+
+    max-width: 1000px;
+    padding: 0 22px 44px;
+    column-gap: max(20%, 55px);
+    row-gap: 22px;
+  }
+
+  .symptoms__list-col {
+    height: 45px;
+    line-height: 1;
+    font-size: 18px;
+    width: 260px;
+    padding-left: 40px;
+    padding-right: 5px;
+    width: clamp(250px, 33%, 270px);
+    border-radius: 10px;
+  }
+
+  .symptoms__list-col:before {
+    height: 65px;
+    width: 65px;
+    top: -10px;
+    left: -20px;
+
+  }
+
+  .symptom_high-fever {
+    justify-self: end;
+    grid-row: 1;
+  }
+  .symptom_loss-of-sense-of-taste {
+    justify-self: start;
+    grid-row: 1;
+  }
+  .symptom_dry-cough {
+    justify-self: center;
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .symptom_difficulty-breathing {
+    justify-self: center;
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .symptom_loss-sense-of-smell {
+    justify-self: start;
+    grid-row: 3;
+  }
+  .symptom_sore-throat {
+    justify-self: end;
+    grid-row: 3;
   }
 }
