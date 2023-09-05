@@ -1869,4 +1869,57 @@ a:visited {
     font-size: 18px;
     line-height: 22px;
   }
+
+  .quote {
+    padding: 30px 12px;
+    background: rgba(196, 196, 196, 0.15);
+    border-radius: 20px;
+
+    bottom: -188px;
+  }
+
+  .quote__wrapper {
+    width: 85vw;
+    max-width: 659px;
+    height: 263px;
+    border-radius: 20px;
+    padding: 16px 48px 56px;
+  }
+
+  .quote__title {
+    margin-top: 0;
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .quote__subtitle {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .quote__form {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 549px;
+    padding: 0 23px;
+    height: 40px;
+  }
+
+  .quote__input-email {
+    font-size: 20px;
+    border-radius: 20px 0 0 20px;
+    height: 75px;
+  }
+
+  .quote__send-btn {
+    width: 100px;
+    height: 75px;
+    padding: 10px 23px 11px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .quote .icon-send {
+    width: 40px;
+  }
 }
