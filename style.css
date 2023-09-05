@@ -837,8 +837,12 @@ a:visited {
   justify-content: space-between;
 }
 
-.get-vaccine__header {
+.get-vaccine__title {
   grid-area: header;
+  width: 100%;
+}
+
+.get-vaccine__header {
   margin-top: 40px;
   max-width: 450px;
   font-weight: 700;
