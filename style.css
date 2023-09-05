@@ -1345,4 +1345,22 @@ a:visited {
     line-height: 24px;
     padding: 0;
   }
+
+  .page__header {
+    padding: 0 50px;
+  }
+
+  .header__logo {
+    font-size: 25.498px;
+    line-height: 31px;
+  }
+
+  .header__logo::after {
+    width: 80px;
+  }
+
+  .page__header .nav-bar {
+    display: none;
+  }
+
 }
