@@ -1363,4 +1363,124 @@ a:visited {
     display: none;
   }
 
+  .promo {
+    padding-top: 95px;
+    height: auto;
+  }
+
+  .promo__wrapper {
+    padding: 0 50px;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .promo__content-wrapper {
+    max-width: 502px;
+  }
+
+  .promo__header {
+    margin-top: 20px;
+  }
+
+  .promo__information {
+    margin-top: 40px;
+  }
+
+  .promo__buttons-block .btn {
+    max-width: 175px;
+    border-radius: 20px;
+    height: 64px;
+  }
+
+  .promo__visual-wrapper {
+    margin-top: 55px;
+    padding: 0 74px 0;
+  }
+
+  .promo__image {
+    background-color: var(--color-blue);
+    border-radius: 43px;
+    margin: 0;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .promo__aside-image-wrapper--left {
+    left: 74px;
+  }
+
+  .promo__aside-image-wrapper--right {
+    right: calc(-100px + 74px);
+  }
+
+  .specialists {
+    height: 100px;
+    width: 374px;
+    left: 74px;
+    transform: translate(-50px, 46px);
+    padding: 20px;
+  }
+
+  .specialists__item--image:not(:first-of-type) {
+    margin-left: -3px;
+  }
+
+
+  .specialists__photo {
+    border-radius: 10px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .specialists__item--info {
+    font-size: 24px;
+  }
+
+  .promo__schedule {
+    grid-row: 3/4;
+    grid-column: 1/2;
+    position: relative;
+    margin-top: 85px;
+  }
+
+  .schedule__title {
+    font-size: 24px;
+    line-height: 29px;
+
+    top: 0;
+  }
+
+  .promo__schedule-wrapper {
+    height: auto;
+    flex-direction: column;
+    padding: 20px 50px 45px;
+  }
+
+  .schedule__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    grid-template-columns: auto auto;
+  }
+
+  .schedule__label {
+    min-width: 290px;
+    column-gap: 20px;
+    font-size: 20px;
+    grid-template-columns: 50px 1fr;
+    line-height: 24px;
+    height: 54px;
+  }
+
+  .promo .icon {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+  }
+
+  .schedule__submit-btn {
+    width: 253px;
+    margin-left: 0;
+    font-size: 20px;
+  }
 }
