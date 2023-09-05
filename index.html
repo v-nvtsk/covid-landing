@@ -7,6 +7,7 @@
   <title>COVID-19 Vaccination Got Easier With Vaccination.ng</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="mobile.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 </head>
 
 <body class="page">
@@ -258,7 +259,7 @@
                 Notifications for appointment and reminders will be sent to this
                 provided number</p>
               <div class="get-vaccine__phone-wrapper">
-                <input class="get-vaccine__input get-vaccine__phone-input" type="tel" name="phone" id="phone"
+                <input id="phone" class="get-vaccine__input get-vaccine__phone-input" type="tel" name="phone" id="phone"
                   placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
                 <button class="btn btn-primary get-vaccine__verify-btn" type="button">
                   Verify
@@ -426,6 +427,22 @@
 
 
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      initialCountry: "auto",
+      dropdownContainer: 'null',
+      geoIpLookup: function (callback) {
+        fetch("https://ipapi.co/json")
+          .then(function (res) { return res.json(); })
+          .then(function (data) { callback(data.country_code); })
+          .catch(function () { callback("ru"); });
+      },
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/utils.js",
+    });
+  </script>
 </body>
 
 </html>
