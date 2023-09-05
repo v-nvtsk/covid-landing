@@ -247,14 +247,14 @@
 
   .wgv__list {
     margin-top: 40px;
-    flex-direction: column;
     gap: 30px;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
   }
 
-  .wgv__list {
+  
+  .wgv__sublist {
     flex-direction: column;
-    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .wgv__list-item {
