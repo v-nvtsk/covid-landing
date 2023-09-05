@@ -1766,7 +1766,6 @@ a:visited {
     width: 65px;
     top: -10px;
     left: -20px;
-
   }
 
   .symptom_high-fever {
@@ -1921,5 +1920,60 @@ a:visited {
 
   .quote .icon-send {
     width: 40px;
+  }
+
+  .page__footer {
+    height: 500px;
+    padding: 270px 50px 50px;
+  }
+
+  .footer__wrapper {
+    height: auto;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .footer__logo {
+    position: relative;
+    font-size: 25.5px;
+    line-height: 31px;
+  }
+
+  .page__footer .nav-bar {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .page__footer .nav-bar__list {
+    gap: 25px;
+  }
+  .nav-bar__item {
+    line-height: 1;
+  }
+
+  .nav-link {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .nav-link--active {
+    display: inline-block;
+  }
+
+  .footer__social {
+    margin-top: 40px;
+    margin-left: 0;
+    gap: 0;
+  }
+
+  .footer__social .icon {
+    width: 32px;
+    height: 32px;
+  }
+
+  .footer__social .icon:not(:last-of-type) {
+    margin-left: 7px;
   }
 }
