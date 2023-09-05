@@ -641,7 +641,6 @@ a:visited {
 .results__info-wrapper {
   background: rgba(196, 196, 196, 0.05);
   border-radius: 20px;
-  
   padding: 20px 0;
   font-weight: 700;
   font-size: 1.5rem;
@@ -1438,7 +1437,6 @@ a:visited {
   .specialists__item--image:not(:first-of-type) {
     margin-left: -3px;
   }
-
 
   .specialists__photo {
     border-radius: 10px;
