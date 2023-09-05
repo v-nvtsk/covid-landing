@@ -1606,4 +1606,107 @@ a:visited {
     height: 30px;
     width: 30px;
   }
+
+  .get-vaccine {
+    height: auto;
+    padding: 40px 57px 49px;
+  }
+
+  .get-vaccine__wrapper {
+    flex-direction: column;
+    width: 100%;
+    grid-template-areas:
+      "header"
+      "visual"
+      "content";
+    justify-content: center;
+  }
+
+  .get-vaccine__header {
+    margin-top: 0;
+    max-width: 450px;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.23;
+    text-align: left;
+  }
+
+  .get-vaccine__form {
+    max-width: none;
+    width: 100%;
+  }
+
+  .get-vaccine__fullname-label {
+    margin-top: 70px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .get-vaccine__phone-label {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .get-vaccine__phone-description {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .get-vaccine__phone-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+
+  .get-vaccine__verify-btn {
+    width: 200px;
+    height: 70px;
+    flex-shrink: 0;
+  }
+
+  .get-vaccine__input {
+    width: 100%;
+    margin-top: 20px;
+    height: 70px;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+
+  .get-vaccine__submit-btn {
+    margin-top: 40px;
+    width: 100%;
+  }
+
+  .get-vaccine__check-status {
+    width: 100%;
+    margin: 40px auto 0;
+    font-size: 14px;
+    line-height: 17px;
+    justify-content: center;
+    gap: 46px;
+  }
+
+  .get-vaccine__visual {
+    width: 380px;
+    height: 550px;
+    margin-left: 21px;
+    margin-top: 65px;
+  }
+
+  .get-vaccine__visual-title {
+    width: 97px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .get-vaccine__img-covid {
+    width: 98px;
+    height: 98px;
+  }
+
+  .get-vaccine__verify-status-btn {
+    width: 200px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
