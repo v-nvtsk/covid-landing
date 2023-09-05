@@ -1605,6 +1605,12 @@ a:visited {
     flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
   }
+
+  .wgv__sublist {
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
   .wgv__list-item.wgv__list-item--primary {
     grid-column: 1 / span 2;
     /* gr */
