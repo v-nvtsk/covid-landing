@@ -880,11 +880,35 @@ a:visited {
 .get-vaccine__phone-wrapper {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
   gap: 36px;
 }
 
+.get-vaccine__phone-input-container {
+  margin-top: 20px;
+  color: black;
+}
+
+.get-vaccine__phone-input{
+  max-width: 400px;
+}
+
+.iti__country-name {
+  color: black;
+  font-size: 16px;
+}
+
+.invalid {
+  border: 3px solid red !important;
+}
+
+.iti {
+  width: 100%;
+  max-width: 400px;
+} 
+
 .get-vaccine__verify-btn {
-  padding: 20px 70px;
+  width: 214px;
 }
 
 .get-vaccine__input {
@@ -899,7 +923,6 @@ a:visited {
   font-weight: 500;
   font-size: 1.5rem;
   padding: 20px 30px;
-  border: 3px solid rgba(11, 21, 60, 0.15);
 }
 
 .get-vaccine__input:focus {
@@ -1644,7 +1667,7 @@ a:visited {
   }
 
   .get-vaccine__form {
-    max-width: none;
+    /* max-width: none; */
     width: 100%;
   }
 
