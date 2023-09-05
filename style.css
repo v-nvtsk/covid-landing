@@ -1498,4 +1498,40 @@ a:visited {
   .vaccine-types__list {
     gap: 24px;
   }
+
+  .results {
+    padding: 57px 50px;
+  }
+
+  .results__wrapper {
+    padding-bottom: 45px;
+  }
+
+  .results__title {
+    font-size: 20px;
+    line-height: 1;
+    padding: 18px 99px 13px;
+  }
+
+  .results__form {
+    flex-direction: column;
+    padding: 40px 110px 0;
+  }
+
+  .results__input {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .results__info {
+    margin: 50px 65px 0;
+  }
+  
+  .results__info-wrapper {
+    padding: 14px 0;
+    border-radius: 20px;
+    font-size: 14px;
+    height: 50px;
+  }
+
 }
