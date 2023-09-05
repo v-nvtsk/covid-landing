@@ -396,8 +396,8 @@
   }
 
   .get-vaccine__check-status {
-    width: 100%;
-    margin: 20px auto 0;
+    max-width: 320px;
+    margin: 20px 0 0;
     font-size: 14px;
     line-height: 17px;
     justify-content: center;
