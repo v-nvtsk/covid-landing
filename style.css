@@ -219,17 +219,17 @@ a:visited {
   font-style: normal;
   font-weight: 700;
   font-size: 2rem;
+  position: relative;
 
   color: var(--color-text--primary);
 }
 
 .header__logo::before,
 .footer__logo::before {
-  /* Line 1 */
   content: "";
   display: inline-block;
   position: absolute;
-  bottom: 15px;
+  bottom: 0;
   height: 1px;
   width: 100px;
 
