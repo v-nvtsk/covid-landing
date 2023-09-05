@@ -1534,12 +1534,78 @@ a:visited {
   .results__info {
     margin: 50px 65px 0;
   }
-  
+
   .results__info-wrapper {
     padding: 14px 0;
     border-radius: 20px;
     font-size: 14px;
     height: 50px;
   }
+  
+  .wgv {
+    padding: 58px 70px 45px;
+    height: auto;
+    gap: unset;
+  }
 
+  .wgv__title {
+    flex-direction: column;
+  }
+
+  .wgv__header {
+    width: 100%;
+    font-size: 36px;
+  }
+
+  .wgv__description {
+    margin-top: 74px;
+    width: 85%;
+
+    font-size: 19.9584px;
+    line-height: 24px;
+  }
+
+  .wgv__list {
+    margin-top: 50px;
+    gap: 30px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr 1fr;
+  }
+  .wgv__list-item.wgv__list-item--primary {
+    grid-column: 1 / span 2;
+    /* gr */
+  }
+
+  .wgv__list-item {
+    width: 296px;
+    height: 290px;
+    padding: 20px 15px 24px 20px;
+
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .list-item__description {
+    margin-top: 30px;
+    max-width: 352px;
+    font-size: 17.9626px;
+    line-height: 22px;
+  }
+
+  .list-item__next {
+    margin-top: 40px;
+    display: flex;
+    align-items: Center;
+  }
+
+  .wgv .wgv__readmore {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .wgv__readmore-icon {
+    height: 30px;
+    width: 30px;
+  }
 }
