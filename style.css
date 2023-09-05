@@ -1483,4 +1483,13 @@ a:visited {
     margin-left: 0;
     font-size: 20px;
   }
+
+  .vaccine-types {
+    height: 80px;
+    padding: 10px 50px;
+  }
+
+  .vaccine-types__list {
+    gap: 24px;
+  }
 }
