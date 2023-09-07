@@ -162,6 +162,15 @@ html {
   font-size: 16px;
 }
 
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+body.scroll-lock{
+  overflow: hidden;
+}
+
 .btn {
   cursor: pointer;
   border: none;
@@ -2018,3 +2027,4 @@ a:visited {
     margin-left: 7px;
   }
 }
+
