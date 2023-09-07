@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+  // Phone input init
   const phoneInput = document.querySelector("#phone");
-  const iti = window.intlTelInput(phoneInput, {
+  const iti = intlTelInput(phoneInput, {
     customContainer: 'get-vaccine__phone-input-container',
     initialCountry: "auto",
     utilsScript: '../lib/phone/utils.js',
@@ -17,7 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-
   const verifyButton = document.querySelector('.get-vaccine__verify-btn');
 
   verifyButton.addEventListener('click', (ev) => {
@@ -28,4 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
   phoneInput.addEventListener('input', (ev) => {
     phoneInput.classList.remove('invalid');
   })
+
+  // Modal dialogs
+
+
+
+  // 
 })
