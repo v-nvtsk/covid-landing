@@ -124,17 +124,8 @@
                 <!-- <option value="SINOVAC">SINOVAC</option> -->
                 <!-- </select> -->
               </label>
-              <button class="btn btn-primary schedule__submit-btn" type="button" class="schedule-submit"
-                onclick="window.dialogIsScheduled.show()">Submit</button>
+              <button class="btn btn-primary schedule__submit-btn" type="button">Submit</button>
             </form>
-            <div class="dialog-wrapper">
-              <dialog id="dialogIsScheduled">
-                <p>Your vaccination is scheduled!</p>
-                <button class="btn btn-primary" type="button" onclick="window.dialogIsScheduled.close()">
-                  Close
-                </button>
-              </dialog>
-            </div>
           </div>
         </section>
       </div>
@@ -433,6 +424,17 @@
 
   </div>
 
+  <dialog id="dialog-is-scheduled" class="dialog-is-scheduled">
+    <div class="modal-dialog__wrapper">
+      <form method="dialog">
+        <div class="content">
+          <h2 class="modal-dialog__title">Vaccination schedule</h2>
+          <p class="modal-dialog__content">Your vaccination is scheduled!</p>
+        </div>
+        <Button class="btn btn-primary modal-dialog__close-btn">Close</Button>
+      </form>
+    </div>
+  </dialog>
   <script src="./lib/phone/intlTelInput.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
