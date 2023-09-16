@@ -1,4 +1,5 @@
 :root {
+  --color-body-bg: #0b153c;
   --color-blue: #17c2ec;
   --color-black: #000000;
   --color-dark-blue: #0b153c;
@@ -125,6 +126,7 @@ section {
 body {
   line-height: 1;
   color: var(--color-text--secondary);
+  background: #0b153c;
 }
 ol,
 ul {
