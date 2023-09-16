@@ -2019,3 +2019,73 @@ a:visited {
   }
 }
 
+/*  DIALOG STYLES  */
+html,
+body {
+  scrollbar-gutter: stable;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+.dialog-is-scheduled {
+  background-color: var(--color-body-bg);
+  color: white;
+  text-align: center;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+}
+
+.modal-dialog__title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.modal-dialog__content {
+  margin-top: 40px;
+}
+
+dialog[open] {
+  animation: myFadeIn 1s ease normal;
+}
+
+@keyframes myFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.dialog-is-scheduled form {
+  max-width: 50vw;
+  min-width: 200px;
+  height: 300px;
+  position: relative;
+  padding: 20px;
+}
+
+/* .openModal-btn, */
+.modal-dialog__close-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 160px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-dialog__wrapper {
+  padding: 1em;
+}
