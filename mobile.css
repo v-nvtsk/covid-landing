@@ -256,7 +256,6 @@
     grid-template-columns: 1fr;
   }
 
-  
   .wgv__sublist {
     flex-direction: column;
     gap: 30px;
