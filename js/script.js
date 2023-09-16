@@ -30,8 +30,33 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // Modal dialogs
+  const scheduleSubmitBtn = document.querySelector('.schedule__submit-btn');
+  const dialogIsScheduled = document.querySelector('#dialog-is-scheduled');
 
+  scheduleSubmitBtn.addEventListener('click', (ev) => {
+    openDialogAndLockScroll(dialogIsScheduled);
+  })
 
+  dialogIsScheduled.addEventListener('close', ev => {
+    returnScroll();
+  })
 
-  // 
+  dialogIsScheduled.addEventListener("click", closeOnBackDropClick);
+
+  function closeOnBackDropClick({ currentTarget, target }) {
+    const dialogElement = currentTarget;
+    const isClickedOnBackDrop = target === dialogElement
+    if (isClickedOnBackDrop) {
+      dialogElement.close();
+    }
+  }
+
 })
+
+function openDialogAndLockScroll(dialogBlock) {
+  dialogBlock.showModal();
+  document.body.classList.add("scroll-lock");
+}
+function returnScroll() {
+  document.body.classList.remove("scroll-lock");
+}
