@@ -544,6 +544,7 @@ a:visited {
 }
 
 .vaccine-types {
+  background-color: white;
   padding: 0 min(5%, 70px);
   height: 150px;
   max-width: 100%;
@@ -818,6 +819,7 @@ a:visited {
 
 .get-vaccine {
   height: 750px;
+  background-color: white;
   color: black;
   padding: 0 72px 40px;
 }
