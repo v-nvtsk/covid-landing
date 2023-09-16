@@ -18,6 +18,11 @@
     padding: 0 35px;
   }
 
+  .header__logo,
+  .footer__logo {
+    height: 32px;
+  }
+
   .nav-bar {
     display: none;
   }
@@ -631,6 +636,7 @@
   }
 
   .page__footer .nav-bar {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
