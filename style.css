@@ -314,7 +314,7 @@ a:visited {
 .promo__wrapper {
   margin-top: 100px;
   display: grid;
-  grid-template-columns: minmax(420px, 603px) 622px;
+  grid-template-columns: minmax(420px, 603px) auto;
   padding: 0 70px;
   column-gap: min(5%, 20px);
 }
