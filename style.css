@@ -164,6 +164,14 @@ html {
   font-size: 16px;
 }
 
+a.btn {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
+  color: initial;
+}
+
 .btn {
   cursor: pointer;
   border: none;
@@ -366,6 +374,9 @@ a:visited {
 .promo__buttons-block .btn {
   width: 200px;
   height: 69px;
+  line-height: 69px;
+  text-align: center;
+  color: white;
 }
 
 .promo__help-centre-btn {
