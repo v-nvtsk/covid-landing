@@ -3,6 +3,10 @@
     width: 100%;
   }
 
+  .section__wrapper {
+    width: 100%;
+  }
+
   html {
     font-size: 8px;
   }
@@ -229,9 +233,12 @@
     display: block;
   }
 
-  .wgv {
-    padding: 42px 35px;
+  .why-get-vaccinated {
     height: auto;
+  }
+
+  .wgv.section__wrapper {
+    padding: 42px 35px;
     gap: unset;
   }
 

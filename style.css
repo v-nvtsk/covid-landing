@@ -126,7 +126,7 @@ section {
 body {
   line-height: 1;
   color: var(--color-text--secondary);
-  background: #0b153c;
+  /* background: #0b153c; */
 }
 ol,
 ul {
@@ -206,6 +206,12 @@ a:visited {
 } */
 
 .page__wrapper {
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
+}
+
+.section__wrapper {
   margin: 0 auto;
   max-width: 1440px;
   position: relative;
@@ -295,7 +301,7 @@ a:visited {
   border-radius: 50%;
 }
 
-.check-status-btn {
+a.check-status-btn {
   margin-left: 31px;
 
   width: 219px;
@@ -391,7 +397,6 @@ a:visited {
 
   font-weight: 700;
   font-size: 1.5rem;
-  line-height: 1.2;
 }
 
 .promo__visual-wrapper {
@@ -676,10 +681,13 @@ a:visited {
   text-align: center;
 }
 
-.wgv {
-  background: url(./img/home-background.jpg) center / cover no-repeat;
-  padding: 58px 71px 80px;
+.why-get-vaccinated {
+  background: url(./img/home-background.jpg) center / cover no-repeat, #0b153c;
   height: 795px;
+}
+
+.wgv.section__wrapper {
+  padding: 58px 71px 80px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -1139,13 +1147,13 @@ a:visited {
 
 .feedback {
   height: 934px;
-  padding: 57px min(4.65%, 67px);
   background: url("./img/feedback-background.jpg") center / cover no-repeat,
     rgba(255, 255, 255, 0.5);
   position: relative;
 }
 
 .feedback__wrapper {
+  padding: 57px min(4.65%, 67px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1853,6 +1861,9 @@ a:visited {
 
   .feedback {
     height: auto;
+  }
+
+  .feedback__wrapper {
     padding: 0 30px 158px;
   }
 
