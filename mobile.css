@@ -18,6 +18,11 @@
     padding: 0 35px;
   }
 
+  .header__logo,
+  .footer__logo {
+    height: 32px;
+  }
+
   .nav-bar {
     display: none;
   }
@@ -251,7 +256,6 @@
     grid-template-columns: 1fr;
   }
 
-  
   .wgv__sublist {
     flex-direction: column;
     gap: 30px;
@@ -631,6 +635,7 @@
   }
 
   .page__footer .nav-bar {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
