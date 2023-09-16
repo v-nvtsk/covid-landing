@@ -162,6 +162,7 @@ input[type="number"] {
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 a.btn {
@@ -1461,6 +1462,7 @@ a.check-status-btn {
     max-width: 175px;
     border-radius: 20px;
     height: 64px;
+    line-height: 64px;
   }
 
   .promo__visual-wrapper {
